@@ -39,39 +39,62 @@
       ]
     },
     {
-      "id": "scene-3",
+      "id": "scene-03",
       "title": "Scene 3",
       "description": "",
       "tracks": [
         {
-          "id": "scene-3-01-amb-suara-malam-hari-loop-v100",
+          "id": "scene-03-01-amb-suara-malam-hari-loop-v100",
           "title": "Suara Malam Hari",
-          "file": "assets/audio/scene-3/01_amb_suara-malam_hari_loop_v100.mp3",
+          "file": "assets/audio/scene-03/01_amb_suara-malam_hari_loop_v100.mp3",
           "type": "ambience",
           "loop": true,
           "volume": 1.0
         },
         {
-          "id": "scene-3-02-sfx-suara-langkah-penyergapan-v70",
+          "id": "scene-03-02-sfx-suara-langkah-penyergapan-v70",
           "title": "Suara Langkah Penyergapan",
-          "file": "assets/audio/scene-3/02_sfx_suara-langkah-penyergapan_v70.mp3",
+          "file": "assets/audio/scene-03/02_sfx_suara-langkah-penyergapan_v70.mp3",
           "type": "sfx",
           "loop": false,
           "volume": 0.7
         },
         {
-          "id": "scene-3-03-sfx-suara-tembakan-berlian-tembak-zannet-v100",
+          "id": "scene-03-03-sfx-suara-tembakan-berlian-tembak-zannet-v100",
           "title": "Suara Tembakan Berlian Tembak Zannet",
-          "file": "assets/audio/scene-3/03_sfx_suara-tembakan-berlian-tembak-zannet_v100.m4a",
+          "file": "assets/audio/scene-03/03_sfx_suara-tembakan-berlian-tembak-zannet_v100.m4a",
           "type": "sfx",
           "loop": false,
           "volume": 1.0
         },
         {
-          "id": "scene-3-04-sfx-suara-tembakan-abizar-tembak-sukma-v100",
+          "id": "scene-03-04-sfx-suara-tembakan-abizar-tembak-sukma-v100",
           "title": "Suara Tembakan Abizar Tembak Sukma",
-          "file": "assets/audio/scene-3/04_sfx_suara-tembakan-abizar-tembak-sukma_v100.mp3",
+          "file": "assets/audio/scene-03/04_sfx_suara-tembakan-abizar-tembak-sukma_v100.mp3",
           "type": "sfx",
+          "loop": false,
+          "volume": 1.0
+        },
+        {
+          "id": "scene-03-06-music-3-orang-meninggal-v50-mp3",
+          "title": "3 Orang Meninggal V50.mp3",
+          "file": "assets/audio/scene-03/06_music_3-orang-meninggal_v50.mp3.mp3",
+          "type": "music",
+          "loop": false,
+          "volume": 0.7
+        }
+      ]
+    },
+    {
+      "id": "scene-04",
+      "title": "Scene 4",
+      "description": "",
+      "tracks": [
+        {
+          "id": "scene-04-01-music-adegan-4-transisi-pembukaan-v100",
+          "title": "Adegan 4 Transisi Pembukaan",
+          "file": "assets/audio/scene-04/01_music_adegan-4-transisi-pembukaan_v100.mp3",
+          "type": "music",
           "loop": false,
           "volume": 1.0
         }
