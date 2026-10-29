@@ -76,6 +76,14 @@
           "volume": 1.0
         },
         {
+          "id": "scene-03-05-sfx-anjah-tembak-reisa",
+          "title": "Anjah Tembak Reisa",
+          "file": "assets/audio/scene-03/05_sfx_anjah-tembak-reisa.m4a",
+          "type": "sfx",
+          "loop": false,
+          "volume": 1.0
+        },
+        {
           "id": "scene-03-06-music-3-orang-meninggal-v50-mp3",
           "title": "3 Orang Meninggal V50.mp3",
           "file": "assets/audio/scene-03/06_music_3-orang-meninggal_v50.mp3.mp3",
