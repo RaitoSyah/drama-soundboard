@@ -22,6 +22,21 @@
           "volume": 1.0
         }
       ]
+    },
+    {
+      "id": "scene-02",
+      "title": "Scene 2",
+      "description": "",
+      "tracks": [
+        {
+          "id": "scene-02-01-music-pembukan-narator-scene-2-v80",
+          "title": "Pembukan Narator Scene 2",
+          "file": "assets/audio/scene-02/01_music_pembukan-narator-scene-2_v80.mp3",
+          "type": "music",
+          "loop": false,
+          "volume": 0.8
+        }
+      ]
     }
   ]
 }
