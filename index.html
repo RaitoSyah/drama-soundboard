@@ -19,20 +19,24 @@
 <div class="bar">
   <button id="stop-all" class="stopall" type="button">■ Stop All</button>
   <input id="search" type="search" placeholder="Cari audio atau scene" aria-label="Cari audio atau scene" autocomplete="off">
-  <label class="master">Volume master
+  <label class="master">Volume
     <input id="master" type="range" min="0" max="1" step="0.05" value="1">
     <output id="master-out">100%</output>
   </label>
-  <label class="mode"><input id="exclusive" type="checkbox" checked> Mode eksklusif</label>
 </div>
 
 <main>
   <div id="notice" class="notice" hidden></div>
+  <div class="tools">
+    <button id="mode" type="button">Mode: Eksklusif</button>
+    <button id="dl" type="button">⬇ Simpan ke HP</button>
+  </div>
   <section aria-labelledby="now-h">
     <h2 id="now-h">Sedang aktif</h2>
     <div id="now"></div>
   </section>
   <nav id="tabs" class="tabs" aria-label="Pilih scene"></nav>
+  <div id="filters" class="filters" aria-label="Filter jenis audio"></div>
   <section id="panel" aria-live="polite"></section>
 </main>
 <div id="toast" class="toast" role="alert" hidden></div>

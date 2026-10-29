@@ -67,11 +67,23 @@ main{padding:.9rem;max-width:1100px;margin:0 auto}
 .track .t{font-weight:700;font-size:1.05rem}
 .track .m{color:var(--muted);font-size:.85rem}
 .track .st{font-size:.85rem;margin-top:auto}
-.track[data-status=playing]{border-left-color:var(--cue);background:#2d2818}
-.track[data-status=paused]{border-left-color:var(--muted)}
-.track[data-status=loading]{border-left-color:var(--ok)}
-.track[data-status=error]{border-left-color:var(--stop);background:#2a1a18}
-
+.type-music{background:#1c2a55;border-left-color:#5b84f0}
+.type-sfx{background:#4a2230;border-left-color:#f07a8e}
+.type-ambience{background:#143a33;border-left-color:#4fd1b5}
+.track[data-status=playing]{outline:3px solid var(--cue);outline-offset:-3px}
+.track[data-status=paused]{outline:3px dashed var(--muted);outline-offset:-3px}
+.track[data-status=loading]{outline:3px dotted var(--ok);outline-offset:-3px}
+.track[data-status=error]{outline:3px solid var(--stop);outline-offset:-3px}
+.card{position:relative}
+.card .track{padding-right:3.6rem}
+.fav{position:absolute;top:.3rem;right:.3rem;width:44px;height:44px;border:0;border-radius:50%;background:#0007;font-size:1.3rem;line-height:1}
+.tools{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.9rem}
+.tools button{min-height:48px;padding:0 1rem;border-radius:var(--r);border:1px solid var(--line);background:var(--surface2)}
+.filters{display:flex;gap:.5rem;overflow-x:auto;margin:0 -.9rem .8rem;padding-inline:.9rem}
+.chip{flex:0 0 auto;min-height:40px;padding:0 .9rem;border-radius:999px;border:1px solid var(--line);background:var(--surface2);white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--text);color:#14161b;font-weight:700}
+.toast.good{background:#173026;border-color:var(--ok)}
+@media(min-width:600px){.bar{grid-template-columns:auto 1fr 240px}.bar .master{grid-column:auto}}
 .toast{position:fixed;left:.9rem;right:.9rem;bottom:.9rem;z-index:10;padding:.8rem 1rem;border-radius:var(--r);background:#3a1f1b;border:1px solid var(--stop);max-width:520px;margin:auto}
 [hidden]{display:none!important}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
