@@ -37,6 +37,45 @@
           "volume": 0.8
         }
       ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Scene 3",
+      "description": "",
+      "tracks": [
+        {
+          "id": "scene-3-01-amb-suara-malam-hari-loop-v100",
+          "title": "Suara Malam Hari",
+          "file": "assets/audio/scene-3/01_amb_suara-malam_hari_loop_v100.mp3",
+          "type": "ambience",
+          "loop": true,
+          "volume": 1.0
+        },
+        {
+          "id": "scene-3-02-sfx-suara-langkah-penyergapan-v70",
+          "title": "Suara Langkah Penyergapan",
+          "file": "assets/audio/scene-3/02_sfx_suara-langkah-penyergapan_v70.mp3",
+          "type": "sfx",
+          "loop": false,
+          "volume": 0.7
+        },
+        {
+          "id": "scene-3-03-sfx-suara-tembakan-berlian-tembak-zannet-v100",
+          "title": "Suara Tembakan Berlian Tembak Zannet",
+          "file": "assets/audio/scene-3/03_sfx_suara-tembakan-berlian-tembak-zannet_v100.m4a",
+          "type": "sfx",
+          "loop": false,
+          "volume": 1.0
+        },
+        {
+          "id": "scene-3-04-sfx-suara-tembakan-abizar-tembak-sukma-v100",
+          "title": "Suara Tembakan Abizar Tembak Sukma",
+          "file": "assets/audio/scene-3/04_sfx_suara-tembakan-abizar-tembak-sukma_v100.mp3",
+          "type": "sfx",
+          "loop": false,
+          "volume": 1.0
+        }
+      ]
     }
   ]
 }
