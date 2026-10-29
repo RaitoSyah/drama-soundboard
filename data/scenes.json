@@ -1,0 +1,24 @@
+{
+  "_catatan": "CONTOH. File audio di bawah belum ada. Ganti judul dan path sesuai file MP3 asli yang kamu taruh di assets/audio/.",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "Scene 1 - Pembukaan",
+      "description": "Suasana awal cerita (contoh)",
+      "tracks": [
+        { "id": "audio-001", "title": "Suara Malam (contoh)", "file": "assets/audio/scene-01/suara-malam.mp3", "type": "ambience", "loop": true, "volume": 0.8 },
+        { "id": "audio-002", "title": "Musik Pembukaan (contoh)", "file": "assets/audio/scene-01/musik-pembukaan.mp3", "type": "music", "loop": false, "volume": 0.7 },
+        { "id": "audio-003", "title": "Pintu Diketuk (contoh)", "file": "assets/audio/scene-01/pintu-diketuk.mp3", "type": "sfx", "loop": false, "volume": 1 }
+      ]
+    },
+    {
+      "id": "scene-02",
+      "title": "Scene 2 - Pasar",
+      "description": "Keramaian pasar (contoh)",
+      "tracks": [
+        { "id": "audio-004", "title": "Keramaian Pasar (contoh)", "file": "assets/audio/scene-02/keramaian-pasar.mp3", "type": "ambience", "loop": true, "volume": 0.6 },
+        { "id": "audio-005", "title": "Petir (contoh)", "file": "assets/audio/scene-02/petir.mp3", "type": "sfx", "loop": false, "volume": 1 }
+      ]
+    }
+  ]
+}
