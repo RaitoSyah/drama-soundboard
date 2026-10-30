@@ -6,9 +6,9 @@
       "description": "",
       "tracks": [
         {
-          "id": "01-pembukaan-01-music-pembukaan-narator-1-mp3",
-          "title": "Pembukaan Narator 1.mp3",
-          "file": "assets/audio/01-pembukaan/01_music_pembukaan-narator-1.mp3.m4a",
+          "id": "01-pembukaan-01-music-pembukaan-narator",
+          "title": "Pembukaan Narator",
+          "file": "assets/audio/01-pembukaan/01_music_Pembukaan-Narator.mp3",
           "type": "music",
           "loop": false,
           "volume": 0.7
@@ -28,6 +28,14 @@
       "title": "Scene 2",
       "description": "",
       "tracks": [
+        {
+          "id": "scene-02-01-music-pembacaan-puisi",
+          "title": "Pembacaan Puisi",
+          "file": "assets/audio/scene-02/01_music_pembacaan-puisi.m4a",
+          "type": "music",
+          "loop": false,
+          "volume": 0.7
+        },
         {
           "id": "scene-02-01-music-pembukan-narator-scene-2-v80",
           "title": "Pembukan Narator Scene 2",
@@ -90,6 +98,14 @@
           "type": "music",
           "loop": false,
           "volume": 0.7
+        },
+        {
+          "id": "scene-03-sfx-detik-jam-buat-akhiran-dekat-transisi-loop",
+          "title": "Detik Jam Buat Akhiran Dekat Transisi",
+          "file": "assets/audio/scene-03/sfx_detik-jam-buat-akhiran-dekat-transisi_loop.mp3",
+          "type": "sfx",
+          "loop": true,
+          "volume": 1.0
         }
       ]
     },
