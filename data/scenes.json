@@ -123,6 +123,21 @@
           "volume": 1.0
         }
       ]
+    },
+    {
+      "id": "scene-05",
+      "title": "Scene 5",
+      "description": "",
+      "tracks": [
+        {
+          "id": "scene-05-03-music-adegan-pengerjaan-loop-v100",
+          "title": "Adegan Pengerjaan",
+          "file": "assets/audio/scene-05/03_music_adegan-pengerjaan_loop_v100.mp3",
+          "type": "music",
+          "loop": true,
+          "volume": 1.0
+        }
+      ]
     }
   ]
 }
