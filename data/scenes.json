@@ -121,6 +121,14 @@
           "type": "music",
           "loop": false,
           "volume": 1.0
+        },
+        {
+          "id": "scene-04-01-sfx-suara-pintu-dibuka",
+          "title": "Suara Pintu Dibuka",
+          "file": "assets/audio/scene-04/01_sfx_suara-pintu-dibuka.mp3",
+          "type": "sfx",
+          "loop": false,
+          "volume": 1.0
         }
       ]
     },
@@ -136,6 +144,21 @@
           "type": "music",
           "loop": true,
           "volume": 1.0
+        }
+      ]
+    },
+    {
+      "id": "scene-06",
+      "title": "Scene 6",
+      "description": "",
+      "tracks": [
+        {
+          "id": "scene-06-06-akhiran-narator-berbicara-loop-v80",
+          "title": "Akhiran Narator Berbicara",
+          "file": "assets/audio/scene-06/06_akhiran-narator-berbicara_loop_v80.mp3",
+          "type": "sfx",
+          "loop": true,
+          "volume": 0.8
         }
       ]
     }
