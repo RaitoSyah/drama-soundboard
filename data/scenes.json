@@ -20,6 +20,22 @@
           "type": "sfx",
           "loop": false,
           "volume": 1.0
+        },
+        {
+          "id": "01-pembukaan-03-amb-rice-field-ambience-v80",
+          "title": "Rice Field Ambience",
+          "file": "assets/audio/01-pembukaan/03_amb_rice-field-ambience_v80.mp3",
+          "type": "ambience",
+          "loop": false,
+          "volume": 0.8
+        },
+        {
+          "id": "01-pembukaan-04-sfx-suara-penyergapan-intro",
+          "title": "Suara Penyergapan Intro",
+          "file": "assets/audio/01-pembukaan/04_sfx_suara-penyergapan-intro.mp3",
+          "type": "sfx",
+          "loop": false,
+          "volume": 1.0
         }
       ]
     },
