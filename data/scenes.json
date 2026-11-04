@@ -45,20 +45,20 @@
       "description": "",
       "tracks": [
         {
-          "id": "scene-02-01-music-pembacaan-puisi",
-          "title": "Pembacaan Puisi",
-          "file": "assets/audio/scene-02/01_music_pembacaan-puisi.m4a",
-          "type": "music",
-          "loop": false,
-          "volume": 0.7
-        },
-        {
           "id": "scene-02-01-music-pembukan-narator-scene-2-v80",
           "title": "Pembukan Narator Scene 2",
           "file": "assets/audio/scene-02/01_music_pembukan-narator-scene-2_v80.mp3",
           "type": "music",
           "loop": false,
           "volume": 0.8
+        },
+        {
+          "id": "scene-02-03-music-pembacaan-puisi",
+          "title": "Pembacaan Puisi",
+          "file": "assets/audio/scene-02/03_music_pembacaan-puisi.m4a",
+          "type": "music",
+          "loop": false,
+          "volume": 0.7
         }
       ]
     },
@@ -76,12 +76,12 @@
           "volume": 1.0
         },
         {
-          "id": "scene-03-02-sfx-suara-langkah-penyergapan-v70",
-          "title": "Suara Langkah Penyergapan",
-          "file": "assets/audio/scene-03/02_sfx_suara-langkah-penyergapan_v70.mp3",
+          "id": "scene-03-02-sfx-suara-penyergapan-scene1",
+          "title": "Suara Penyergapan Scene1",
+          "file": "assets/audio/scene-03/02_sfx_suara-penyergapan-scene1.m4a",
           "type": "sfx",
           "loop": false,
-          "volume": 0.7
+          "volume": 1.0
         },
         {
           "id": "scene-03-03-sfx-suara-tembakan-berlian-tembak-zannet-v100",
