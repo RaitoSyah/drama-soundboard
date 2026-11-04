@@ -98,6 +98,15 @@
     audio.loop = track.loop;
     audio.src = localUrls.get(track.file) || track.file;
     p = { id: track.id, track, scene, audio, status: 'stopped', error: '', userVol: track.volume, ready: localUrls.has(track.file), preloading: false, preloaded: false, touched: false };
+    const c = audioCtx();
+    if (c) {
+      try {
+        const src = c.createMediaElementSource(audio);
+        p.gain = c.createGain();
+        src.connect(p.gain); p.gain.connect(c.destination);
+        audio.volume = 1;
+      } catch (_) { p.gain = null; }
+    }
     applyVolume(p);
     audio.addEventListener('playing', () => setStatus(p, 'playing'));
     audio.addEventListener('waiting', () => { if (p.status === 'playing') setStatus(p, 'loading'); });
@@ -110,7 +119,18 @@
     players.set(track.id, p);
     return p;
   }
-  const applyVolume = (p) => { p.audio.volume = clamp(p.userVol * state.master, 1); };
+  // Volume lewat Web Audio (GainNode): jalan di Android dan iOS, sedangkan audio.volume sering diabaikan
+  let ctx = null;
+  function audioCtx() {
+    if (ctx === null) { try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (_) { ctx = false; } }
+    return ctx;
+  }
+  function wake() { const c = audioCtx(); if (c && c.state !== 'running') c.resume().catch(() => {}); }
+  document.addEventListener('pointerdown', wake, { passive: true });
+  const applyVolume = (p) => {
+    const v = clamp(p.userVol * state.master, 1);
+    if (p.gain) p.gain.gain.value = v; else p.audio.volume = v;
+  };
   function setStatus(p, s) { p.status = s; if (s !== 'error') p.error = ''; refresh(); }
   function fail(p, e) {
     p.status = 'error';
@@ -122,6 +142,7 @@
     refresh();
   }
   async function play(track, scene) {
+    wake();
     const p = getPlayer(track, scene);
     if (p.status === 'playing' || p.status === 'loading') return; // cegah klik ganda
     p.touched = true;
@@ -139,6 +160,7 @@
   }
   function stopAll(exceptId) { players.forEach((p) => { if (p.id !== exceptId && p.status !== 'stopped') stop(p); }); }
   async function resume(p) {
+    wake();
     p.status = 'loading'; refresh();
     try { await p.audio.play(); } catch (e) { if (e.name !== 'AbortError') fail(p, e); }
   }
@@ -242,12 +264,17 @@
     const active = [...players.values()].filter((p) => p.status !== 'stopped');
     if (!active.length) { now.append(h('p', { class: 'empty' }, 'Tidak ada audio yang aktif. Status: berhenti.')); return; }
     active.forEach((p) => {
+      const pct = () => Math.round(p.userVol * 100) + '%';
+      const out = h('output', {}, pct());
+      const slider = h('input', { type: 'range', min: 0, max: 1, step: 0.01, value: p.userVol, 'aria-label': `Volume ${p.track.title}`,
+        oninput: (e) => { p.userVol = Number(e.target.value); applyVolume(p); out.textContent = pct(); } });
       now.append(h('div', { class: 'row', dataset: { id: p.id, status: p.status } },
         h('div', { class: 'head' }, h('span', { class: 'name' }, p.track.title), h('span', {}, STATUS[p.status])),
         h('div', { class: 'sub' }, `Scene: ${p.scene.title}`),
         p.error ? h('div', { class: 'sub' }, p.error) : null,
         h('div', { class: 'bartrack' }, h('i')),
         h('div', { class: 'time' }, '–:–– / –:––'),
+        h('div', { class: 'vol' }, h('span', {}, 'Volume'), state.exclusive ? null : slider, out),
         h('div', { class: 'acts' },
           p.status === 'paused' || p.status === 'error'
             ? h('button', { type: 'button', onclick: () => (p.status === 'error' ? play(p.track, p.scene) : resume(p)) }, p.status === 'error' ? '↻ Coba lagi' : '▶ Lanjut')
@@ -280,7 +307,7 @@
   async function init() {
     $('stop-all').addEventListener('click', () => stopAll());
     $('search').addEventListener('input', (e) => { state.query = e.target.value; renderTabs(); renderPanel(); });
-    $('mode').addEventListener('click', (e) => { state.exclusive = !state.exclusive; e.currentTarget.textContent = 'Mode: ' + (state.exclusive ? 'Eksklusif' : 'Tumpuk'); });
+    $('mode').addEventListener('click', (e) => { state.exclusive = !state.exclusive; e.currentTarget.textContent = 'Mode: ' + (state.exclusive ? 'Eksklusif' : 'Tumpuk'); refresh(); });
     $('dl').addEventListener('click', downloadAll);
     $('master').addEventListener('input', (e) => {
       state.master = Number(e.target.value); $('master-out').textContent = Math.round(state.master * 100) + '%';

@@ -20,7 +20,7 @@ Cara manual (tanpa skrip): taruh file lalu edit `data/scenes.json`. Tiap audio: 
 - Ketuk kartu untuk memutar. Warna kartu menunjukkan jenis: biru musik, merah efek, hijau suasana.
 - Status audio ditulis di kartu: Siap ✓, Memutar, Jeda, Gagal.
 - Mode Eksklusif (default) menghentikan audio sebelumnya. Mode Tumpuk membolehkan beberapa audio bersamaan.
-- Volume di atas adalah volume master. Volume awal tiap audio diatur lewat `volume` di JSON.
+- Volume di atas adalah volume master (per 1%). Volume awal tiap audio dari `_v10`-`_v100` di nama file. Di Mode Tumpuk, tiap audio aktif punya slider volume, Jeda/Lanjut, dan Stop sendiri. Setelah mengganti `_v..` di nama file, jalankan `python tools/generate.py` lagi.
 - ☆ pada kartu menandai favorit (tersimpan per HP). Filter: Semua, Musik, Efek, Suasana, Favorit.
 - **Simpan ke HP** mengunduh semua audio ke penyimpanan browser: bunyi tanpa delay dan tanpa internet. Lakukan sekali per HP sebelum pentas.
 
