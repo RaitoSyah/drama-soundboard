@@ -139,9 +139,17 @@
           "volume": 1.0
         },
         {
-          "id": "scene-04-01-sfx-suara-pintu-dibuka",
+          "id": "scene-04-02-music-adegan-4-v60",
+          "title": "Adegan 4",
+          "file": "assets/audio/scene-04/02_music_Adegan-4_v60.mp3",
+          "type": "music",
+          "loop": false,
+          "volume": 0.6
+        },
+        {
+          "id": "scene-04-03-sfx-suara-pintu-dibuka",
           "title": "Suara Pintu Dibuka",
-          "file": "assets/audio/scene-04/01_sfx_suara-pintu-dibuka.mp3",
+          "file": "assets/audio/scene-04/03_sfx_suara-pintu-dibuka.mp3",
           "type": "sfx",
           "loop": false,
           "volume": 1.0
