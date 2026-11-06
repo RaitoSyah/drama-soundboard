@@ -76,6 +76,14 @@
           "volume": 1.0
         },
         {
+          "id": "scene-03-1-detik-jam-buat-akhiran-dekat-transisi-loop",
+          "title": "Detik Jam Buat Akhiran Dekat Transisi",
+          "file": "assets/audio/scene-03/1_detik-jam-buat-akhiran-dekat-transisi_loop.mp3",
+          "type": "sfx",
+          "loop": true,
+          "volume": 1.0
+        },
+        {
           "id": "scene-03-02-sfx-suara-penyergapan-scene1",
           "title": "Suara Penyergapan Scene1",
           "file": "assets/audio/scene-03/02_sfx_suara-penyergapan-scene1.m4a",
@@ -116,12 +124,12 @@
           "volume": 0.7
         },
         {
-          "id": "scene-03-sfx-detik-jam-buat-akhiran-dekat-transisi-loop",
-          "title": "Detik Jam Buat Akhiran Dekat Transisi",
-          "file": "assets/audio/scene-03/sfx_detik-jam-buat-akhiran-dekat-transisi_loop.mp3",
+          "id": "scene-03-08-akhiran-narator-berbicara-loop-v80",
+          "title": "Akhiran Narator Berbicara",
+          "file": "assets/audio/scene-03/08_akhiran-narator-berbicara_loop_v80.mp3",
           "type": "sfx",
           "loop": true,
-          "volume": 1.0
+          "volume": 0.8
         }
       ]
     },
@@ -177,12 +185,20 @@
       "description": "",
       "tracks": [
         {
-          "id": "scene-06-06-akhiran-narator-berbicara-loop-v80",
-          "title": "Akhiran Narator Berbicara",
-          "file": "assets/audio/scene-06/06_akhiran-narator-berbicara_loop_v80.mp3",
-          "type": "sfx",
+          "id": "scene-06-07-music-tokoh-masa-lalu-muncul-loop",
+          "title": "Tokoh Masa Lalu Muncul",
+          "file": "assets/audio/scene-06/07_music_tokoh-masa-lalu-muncul_loop.mp3",
+          "type": "music",
           "loop": true,
-          "volume": 0.8
+          "volume": 0.7
+        },
+        {
+          "id": "scene-06-08-music-akhiran",
+          "title": "Akhiran",
+          "file": "assets/audio/scene-06/08_music_Akhiran.mp3",
+          "type": "music",
+          "loop": false,
+          "volume": 0.7
         }
       ]
     }
