@@ -131,12 +131,12 @@
       "description": "",
       "tracks": [
         {
-          "id": "scene-04-01-music-adegan-4-pembukaan-pergantian-tahun-v60",
+          "id": "scene-04-01-music-adegan-4-pembukaan-pergantian-tahun-loop-v100",
           "title": "Adegan 4 Pembukaan Pergantian Tahun",
-          "file": "assets/audio/scene-04/01_music_Adegan-4-pembukaan-pergantian tahun_v60.mp3",
+          "file": "assets/audio/scene-04/01_music_Adegan-4-pembukaan-pergantian tahun_loop_v100.mp3",
           "type": "music",
-          "loop": false,
-          "volume": 0.6
+          "loop": true,
+          "volume": 1.0
         },
         {
           "id": "scene-04-03-sfx-suara-pintu-dibuka",
