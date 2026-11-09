@@ -14,10 +14,10 @@
           "volume": 0.7
         },
         {
-          "id": "01-pembukaan-02-amb-rice-field-ambience-v80",
-          "title": "Rice Field Ambience",
-          "file": "assets/audio/01-pembukaan/02_amb_rice-field-ambience_v80.mp3",
-          "type": "ambience",
+          "id": "01-pembukaan-02-music-ambient-sound-awal-v80",
+          "title": "Ambient Sound Awal",
+          "file": "assets/audio/01-pembukaan/02_music_ambient-sound-awal_v80.m4a",
+          "type": "music",
           "loop": false,
           "volume": 0.8
         },
@@ -25,14 +25,6 @@
           "id": "01-pembukaan-03-sfx-suara-tembakan-peringatan-berlian-v100",
           "title": "Suara Tembakan Peringatan Berlian",
           "file": "assets/audio/01-pembukaan/03_sfx_suara-tembakan peringatan berlian_v100.m4a",
-          "type": "sfx",
-          "loop": false,
-          "volume": 1.0
-        },
-        {
-          "id": "01-pembukaan-04-sfx-suara-penyergapan-intro",
-          "title": "Suara Penyergapan Intro",
-          "file": "assets/audio/01-pembukaan/04_sfx_suara-penyergapan-intro.mp3",
           "type": "sfx",
           "loop": false,
           "volume": 1.0
