@@ -131,17 +131,9 @@
       "description": "",
       "tracks": [
         {
-          "id": "scene-04-01-music-adegan-4-transisi-pembukaan-v100",
-          "title": "Adegan 4 Transisi Pembukaan",
-          "file": "assets/audio/scene-04/01_music_adegan-4-transisi-pembukaan_v100.mp3",
-          "type": "music",
-          "loop": false,
-          "volume": 1.0
-        },
-        {
-          "id": "scene-04-02-music-adegan-4-v60",
-          "title": "Adegan 4",
-          "file": "assets/audio/scene-04/02_music_Adegan-4_v60.mp3",
+          "id": "scene-04-01-music-adegan-4-pembukaan-pergantian-tahun-v60",
+          "title": "Adegan 4 Pembukaan Pergantian Tahun",
+          "file": "assets/audio/scene-04/01_music_Adegan-4-pembukaan-pergantian tahun_v60.mp3",
           "type": "music",
           "loop": false,
           "volume": 0.6
@@ -161,6 +153,14 @@
       "title": "Scene 5",
       "description": "",
       "tracks": [
+        {
+          "id": "scene-05-01-sfx-suara-pintu-dibuka",
+          "title": "Suara Pintu Dibuka",
+          "file": "assets/audio/scene-05/01_sfx_suara-pintu-dibuka.mp3",
+          "type": "sfx",
+          "loop": false,
+          "volume": 1.0
+        },
         {
           "id": "scene-05-03-music-adegan-pengerjaan-loop-v100",
           "title": "Adegan Pengerjaan",
