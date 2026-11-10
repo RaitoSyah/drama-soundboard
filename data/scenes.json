@@ -92,17 +92,17 @@
           "volume": 1.0
         },
         {
-          "id": "scene-03-04-sfx-suara-tembakan-abizar-tembak-sukma-v100",
-          "title": "Suara Tembakan Abizar Tembak Sukma",
-          "file": "assets/audio/scene-03/04_sfx_suara-tembakan-abizar-tembak-sukma_v100.mp3",
+          "id": "scene-03-04-sfx-anjah-tembak-sukma",
+          "title": "Anjah Tembak Sukma",
+          "file": "assets/audio/scene-03/04_sfx_anjah-tembak-sukma.m4a",
           "type": "sfx",
           "loop": false,
           "volume": 1.0
         },
         {
-          "id": "scene-03-05-sfx-anjah-tembak-reisa",
-          "title": "Anjah Tembak Reisa",
-          "file": "assets/audio/scene-03/05_sfx_anjah-tembak-reisa.m4a",
+          "id": "scene-03-05-sfx-suara-tembakan-abizar-tembak-reisa-v100",
+          "title": "Suara Tembakan Abizar Tembak Reisa",
+          "file": "assets/audio/scene-03/05_sfx_suara-tembakan-abizar-tembak-reisa_v100.mp3",
           "type": "sfx",
           "loop": false,
           "volume": 1.0
